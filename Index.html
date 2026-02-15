@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 My Blog</h1>
+            <p>Share your thoughts with the world</p>
+        </header>
+
+        <div class="create-post">
+            <h2>Create a New Post</h2>
+            <form id="postForm">
+                <div class="form-group">
+                    <label for="postTitle">Post Title</label>
+                    <input type="text" id="postTitle" placeholder="Enter your post title..." required>
+                </div>
+                <div class="form-group">
+                    <label for="postContent">Post Content</label>
+                    <textarea id="postContent" placeholder="Write your amazing content here..." required></textarea>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn-create">Post</button>
+                    <button type="reset" class="btn-reset">Clear</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="posts-section" id="postsContainer">
+            <h2>Blog Posts</h2>
+            <div id="postsList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
